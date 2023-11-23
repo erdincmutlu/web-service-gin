@@ -1,7 +1,7 @@
 # web-service-gin
 RESTful API with GO and Gin
 
-To Start the application
+To start the application
 ```
 go run .
 ```
@@ -20,4 +20,10 @@ curl http://localhost:8080/albums \
     --header "Content-Type: application/json" \
     --request "POST" \
     --data '{"id": "4","title": "The Modern Sound of Betty Carter","artist": "Betty Carter","price": 49.99}'
+```
+
+## GET albums/{id}
+To get album by ID
+```
+curl http://localhost:8080/albums/2
 ```
